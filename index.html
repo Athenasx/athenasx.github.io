@@ -9,32 +9,8 @@
     html {
       height: 100%;
       margin: 0;
-    }
-
-    .grid-container {
-      position: relative;
-      width: 100%;
-      height: 100%;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      width: 100%;
-      height: 100%;
-      grid-gap: 10px;
-    }
-
-    .grid-item1,
-    .grid-item2,
-    .grid-item3,
-    .grid-item4,
-    .grid-item5,
-    .grid-item6,
-    .grid-item7,
-    .grid-item8 {
-      position: relative;
+      background-image: url('scream.png'); /* Reemplaza 'tu-imagen-de-fondo.jpg' con la URL de tu imagen */
+      background-size: cover;
     }
 
     .overlay {
@@ -45,39 +21,30 @@
       height: 100%;
       background: rgba(255, 255, 255, 0.7);
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
     }
 
     textarea {
       width: 80%;
-      height: 80%;
+      height: 60%;
       padding: 20px;
       font-size: 16px;
-      border: 2px solid #000; /* Añadido borde negro */
+      border: 2px solid #bd1b1b; /* Añadido borde negro */
       background: transparent;
       resize: none;
+      pointer-events: none; /* Deshabilita la interacción del cursor en el textarea */
     }
   </style>
 </head>
 
 <body>
 
-  <div class="grid-container">
-    <div class="grid">
-      <div class="grid-item1"></div>
-      <div class="grid-item2"></div>
-      <div class="grid-item3"></div>
-      <div class="grid-item4"></div>
-      <div class="grid-item5"></div>
-      <div class="grid-item6"></div>
-      <div class="grid-item7"></div>
-      <div class="grid-item8"></div>
-    </div>
-
-    <div class="overlay">
-      <textarea placeholder="Escribe aquí..."></textarea>
-    </div>
+  <div class="overlay">
+    <textarea placeholder="Título dentro de la caja
+Escribe aquí...">Titulo
+Texto extendido</textarea>
   </div>
 
 </body>
